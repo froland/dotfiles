@@ -1,0 +1,23 @@
+[color]
+  ui = auto
+[commit]
+  gpgsign = true
+[core]
+  filemode = false
+  autocrlf = input
+[filter "lfs"]
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
+  clean = git-lfs clean -- %f
+[init]
+  defaultBranch = main
+[push]
+  default = simple
+  followTags = true
+[pull]
+  rebase = false
+[url "https://github"]
+  insteadOf = git://github
+[user]
+  name = Francois Roland
