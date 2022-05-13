@@ -1,7 +1,5 @@
 [color]
   ui = auto
-[commit]
-  gpgsign = true
 [core]
   filemode = false
   autocrlf = input
